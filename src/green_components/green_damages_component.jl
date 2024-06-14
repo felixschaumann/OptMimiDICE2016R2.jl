@@ -1,6 +1,6 @@
 #Redefining damages component to include natural capital and ecosystem services
 @defcomp green_damages begin
-    DAMAGES    = Variable(index=[time])    #Damages (trillions 2005 USD per year)
+    DAMAGES    = Variable(index=[time])    #Damages (trillions 2010 USD per year)
     DAMAGES_NC = Variable(index=[time])    # GreenDICE: Natural capital Damages (in a measurement of NC)
     DAMFRAC    = Variable(index=[time])    #Damages (fraction of gross output)
     DAMFRAC_NC = Variable(index=[time])    # GreenDICE: Natural Capital Damages (fraction of NC)

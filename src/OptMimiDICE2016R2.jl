@@ -179,10 +179,14 @@ function addGreen(model; time_steps=length(Mimi.dimension(model, :time)), share1
     elasticity_nc = log(Adjusted_tfp)/log(K_NC)
     update_param!(model,:grosseconomy,:gama3, elasticity_nc)
     
-    a_d = 0.0026686075 #Corresponding to total aggregated damages Norhaus and Sztorc (2013)
-    update_param!(model,:damages,:a_d,a_d) # HERE PARAMETER SET
+    a_d = 0.00227 #Corresponding to total aggregated damages of DICE2016R2 (see Excel)
+    update_param!(model, :damages, :a_d, a_d) # HERE PARAMETER SET
+    k_perc = 0.32  #Percentage Corresponding to market damages only, Howard and Sterner (2017)
+    mortality_perc = 0.2 #Percentage corresponding to mortality damages
+    a_k = a_d * (k_perc + mortality_perc)
+    update_param!(model, :damages, :a2, a_k) # HERE PARAMETER SET
 
-    # outcome from damage_param optmisation
+    # outcome from damage_param optmisation (in Functions_GreenDICE.jl and Setup_GreenDICE_mainSpecification.jl)
     a4_optimised = 0.009263 # HERE PARAMETER SET
     update_param!(model,:damages,:a4,a4_optimised) # HERE PARAMETER SET
     

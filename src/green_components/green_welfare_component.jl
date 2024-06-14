@@ -7,7 +7,7 @@
     Environmental_subs = Variable(index=[time]) #GreenDICE: Internal variable for computing utility
     
 
-    CPC             = Parameter(index=[time])   #Per capita consumption (thousands 2005 USD per year)
+    CPC             = Parameter(index=[time])   #Per capita consumption (thousands 2010 USD per year)
     l               = Parameter(index=[time])   #Level of population and labor
     rr              = Parameter(index=[time])   #Average utility social discount rate
     elasmu          = Parameter()               #Elasticity of marginal utility of consumption

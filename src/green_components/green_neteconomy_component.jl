@@ -11,7 +11,7 @@
     Y           = Variable(index=[time])    #Gross world product net of abatement and damages (trillions 2010 USD per year)
     YNET        = Variable(index=[time])    #Output net of damages equation (trillions 2010 USD per year)
 
-    ESPC        = Variable(index=[time])    #Per capita consumption of ES (thousands 2005 USD per year)
+    ESPC        = Variable(index=[time])    #Per capita consumption of ES (thousands 2010 USD per year)
     InvNC       = Variable(index=[time])    #GreenDICE Investment in natural capital (trillions 2005 USD per year)
     benefitsNC  = Variable(index=[time])    #GreenDICE Benefits of the Investment in natural capital 
     YGreen      = Variable(index=[time])    #GreenDICE: a middle step from gross economy to consumption, to subtract investments in NC

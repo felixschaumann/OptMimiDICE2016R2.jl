@@ -1,6 +1,6 @@
 @defcomp green_grosseconomy begin
-    K       = Variable(index=[time])    #Capital stock (trillions 2005 US dollars)
-    YGROSS  = Variable(index=[time])    #Gross world product GROSS of abatement and damages (trillions 2005 USD per year)
+    K       = Variable(index=[time])    #Capital stock (trillions 2010 US dollars)
+    YGROSS  = Variable(index=[time])    #Gross world product GROSS of abatement and damages (trillions 2010 USD per year)
 
     ES  = Variable(index=[time])    #Ecosystem services
     NC      = Parameter(index=[time])   #Natural capital; although is a variable, in this component is a parameter

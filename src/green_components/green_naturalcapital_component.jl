@@ -5,7 +5,7 @@
     nonUV       = Variable(index=[time])   #non Use Value
     
     DAMAGES_NC = Parameter(index=[time])   #GreenDICE: total damages to NC 
-    k0         = Parameter()               #Initial capital value (trill 2005 USD)
+    k0         = Parameter()               #Initial capital value (trill 2010 USD)
     ratioNC    = Parameter()               #GreenDICE: ratio of NC to K0
     benefitsNC = Parameter(index=[time])   #GreenDICE: fraction of investment in NC
     ExtraN = Parameter(index=[time])          #GreenDICE: Year to add an extra asset of N, to compute investments 
